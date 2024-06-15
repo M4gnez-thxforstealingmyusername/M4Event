@@ -20,8 +20,13 @@ public class M4Emitter {
 
     public void emitEvent(){
         for(var receiver : this.receivers){
-            receiver.onEvent(new M4Args(receiver));
+            event(receiver);
         }
     }
+
+    protected void event(M4Receiver receiver) {
+        receiver.onEvent(new M4Args(receiver));
+    }
+
 
 }
