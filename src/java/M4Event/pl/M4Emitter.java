@@ -1,7 +1,5 @@
 package M4Event.pl;
 
-import M4Event.M4Receiver;
-
 import java.util.ArrayList;
 import java.util.List;
 
